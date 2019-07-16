@@ -31,6 +31,22 @@
     },
     "resources": [
         {
+            "Key": "00416444-820a-498d-9132-6eba5edcfe72",
+            "Value": {
+                "id": "dfcef1f4-0e16-4da3-8244-9a7325912d85",
+                "resourcePath": "tilesets\\tileset1\\tileset1.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "005a59a9-0987-4f21-ac38-857b80c2adfe",
+            "Value": {
+                "id": "9d3d326e-79a3-4ad1-9ea2-19dba626afc3",
+                "resourcePath": "sprites\\spr_tile_terrain\\spr_tile_terrain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "00e55a47-a801-4bbf-907c-5bc7506b310f",
             "Value": {
                 "id": "c4563bb0-6de4-4f93-b0af-518eed4acbe8",
@@ -51,6 +67,14 @@
             "Value": {
                 "id": "1e272a48-c2b5-44ef-b631-3108080fd586",
                 "resourcePath": "sprites\\male_1\\male_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0c02aac3-5bd5-45c0-933e-fbc854660b54",
+            "Value": {
+                "id": "48611aae-613b-4d57-8d58-6dea3e75ea80",
+                "resourcePath": "sprites\\spr_tile_cottage\\spr_tile_cottage.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -127,11 +151,27 @@
             }
         },
         {
+            "Key": "3b94a93c-939a-42c0-ab38-06ab077d90e5",
+            "Value": {
+                "id": "6f4ebb6d-2012-42a0-882d-531b1c6400dd",
+                "resourcePath": "tilesets\\tileset0\\tileset0.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "493f75a3-a3a2-46c5-8688-a561a79be2bb",
             "Value": {
                 "id": "084ca328-1895-4077-86e3-6f7ca5063a96",
                 "resourcePath": "views\\493f75a3-a3a2-46c5-8688-a561a79be2bb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "49fbf187-c38d-4d7e-b7dd-cb083275c03a",
+            "Value": {
+                "id": "16111ccb-138f-40d8-b731-bc6f71d41d9a",
+                "resourcePath": "objects\\oCamera\\oCamera.yy",
+                "resourceType": "GMObject"
             }
         },
         {
