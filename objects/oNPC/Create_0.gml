@@ -9,9 +9,14 @@ y_frame = 0;
 x_offset = sprite_get_xoffset(mask_index);
 y_offset = sprite_get_yoffset(mask_index);
 
-sBody = light_fem;
-sHair = brunette_fem;
-sTorso = white_sleeveless_fem;
-sLegs = teal_pants_fem; 
-sFeet = brown_shoes_fem;
+sBody = -1;
+sHair = -1;
+sTorso = -1;
+sLegs = -1; 
+sFeet = -1;
 ssShadow = sShadow;
+
+moveX = 0;
+moveY = 0;
+
+alarm[1] = 1;

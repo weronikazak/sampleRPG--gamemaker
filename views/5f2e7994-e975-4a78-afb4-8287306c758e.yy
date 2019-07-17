@@ -8,7 +8,8 @@
         "18eda2a5-6868-4912-b09a-c3ddaf654f9c",
         "7e664c03-919a-4f86-b36e-32ca2a2a8306",
         "94a2493f-8705-45d0-9789-8259a7083480",
-        "010f16e8-85f9-4c3c-a1dc-82a1aa84d8e7"
+        "010f16e8-85f9-4c3c-a1dc-82a1aa84d8e7",
+        "d80857df-6012-4f36-9447-53f025a5f24a"
     ],
     "filterType": "GMSprite",
     "folderName": "Characters",

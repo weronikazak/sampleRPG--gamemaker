@@ -21,7 +21,6 @@ if (x_frame + (anim_speed/60) < anim_length){
 else { x_frame = 1; }
 
 
-
 if (sBody != -1) draw_sprite_part(sBody, 0, floor(x_frame)*frame_size, y_frame*frame_size, frame_size, frame_size, xx, yy);
 
 if (sHair != -1) draw_sprite_part(sHair, 0, floor(x_frame)*frame_size, y_frame*frame_size, frame_size, frame_size, xx, yy);
@@ -31,4 +30,3 @@ if (sTorso != -1) draw_sprite_part(sTorso, 0, floor(x_frame)*frame_size, y_frame
 if (sLegs != -1) draw_sprite_part(sLegs, 0, floor(x_frame)*frame_size, y_frame*frame_size, frame_size, frame_size, xx, yy);
 
 if (sFeet != -1) draw_sprite_part(sFeet, 0, floor(x_frame)*frame_size, y_frame*frame_size, frame_size, frame_size, xx, yy);
-
