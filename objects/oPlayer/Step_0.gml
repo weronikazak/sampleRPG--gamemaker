@@ -15,6 +15,23 @@ moveY = 0;
 moveY = (input_down - input_up) * spd;
 if (moveY == 0) moveX = (input_right - input_left) * spd;
 
+// get direction player
+if (moveX != 0) {
+	switch (sign(moveX)){
+		case 1: facing = dir.right; break;
+		case -1: facing = dir.left; break;
+	}
+} else if (moveY !=0) {
+	switch (sign(moveY)){
+		case 1: facing = dir.down; break;
+		case -1: facing = dir.up; break;
+	}
+} else {
+	facing = -1;
+}
+
+//Check collision
+
 if (moveX != 0){
 	if (place_meeting(x + moveX, y, oCollision)){
 		repeat(abs(moveX)){
@@ -34,6 +51,21 @@ if (moveY != 0){
 			} else break;
 		}
 		moveY = 0;
+	}
+}
+
+//Check for transitions
+
+var inst = instance_place(x, y, oTransform);
+if (inst != noone and facing == inst.playerFacingBefore) {
+	with (oGame) {
+		if (!doTransition){
+			spawnRoom = inst.targetroom;
+			spawnX = inst.targetX;
+			spawnY = inst.targetY;
+			spawnPlayerFacing = inst.playerFacingAfter;
+			doTransition = true;
+		}
 	}
 }
 

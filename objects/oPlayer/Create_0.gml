@@ -15,3 +15,6 @@ sTorso = white_sleeveless_fem;
 sLegs = teal_pants_fem; 
 sFeet = brown_shoes_fem;
 ssShadow = sShadow;
+
+facing = 0;
+

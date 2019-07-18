@@ -87,11 +87,27 @@
             }
         },
         {
+            "Key": "0d7631e2-e778-478d-a201-8e438769d439",
+            "Value": {
+                "id": "fd19ee6d-b402-42b6-a653-86ed7fb8e020",
+                "resourcePath": "rooms\\room1\\room1.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "18eda2a5-6868-4912-b09a-c3ddaf654f9c",
             "Value": {
                 "id": "3968ae48-4bc6-481e-ad07-ec03d8d09ca2",
                 "resourcePath": "views\\18eda2a5-6868-4912-b09a-c3ddaf654f9c.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "198d078c-050d-4a0b-841c-2d98fc29cf1e",
+            "Value": {
+                "id": "df9a5d7c-fdf6-48d0-aa0d-4ca06223f95d",
+                "resourcePath": "objects\\oTransform\\oTransform.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -188,6 +204,14 @@
                 "id": "16111ccb-138f-40d8-b731-bc6f71d41d9a",
                 "resourcePath": "objects\\oCamera\\oCamera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4a93ffe9-a0c2-4792-aa88-a1b8b9fdceb6",
+            "Value": {
+                "id": "37660c4e-41db-4cd2-8d04-9604424f7130",
+                "resourcePath": "sprites\\spr_tile_interior\\spr_tile_interior.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -447,11 +471,27 @@
             }
         },
         {
+            "Key": "a2a6854d-04c7-431a-bcf8-f7b6d4d93430",
+            "Value": {
+                "id": "57bc86ee-b5b0-4b5f-aaad-6ab154f50742",
+                "resourcePath": "rooms\\room_upstaris\\room_upstaris.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "a31ea5b7-2ac3-4a00-9ea9-17dfbf9fdd26",
             "Value": {
                 "id": "1751d2fa-8498-4072-83d3-00d94b9e0d9e",
                 "resourcePath": "sprites\\brown_shoes_male\\brown_shoes_male.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b1bcea38-fad9-4e0c-a396-14527dc03548",
+            "Value": {
+                "id": "0b867012-179e-407a-b28e-04ec78a40002",
+                "resourcePath": "tilesets\\inside\\inside.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -519,6 +559,14 @@
             }
         },
         {
+            "Key": "d7c5783d-c58c-41d6-b7f7-fd146dbce479",
+            "Value": {
+                "id": "f31776a7-b16c-4ebe-b137-189fc172c7ee",
+                "resourcePath": "rooms\\room2\\room2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "d80857df-6012-4f36-9447-53f025a5f24a",
             "Value": {
                 "id": "cbf6eadd-1765-4b1a-88b4-1370c7e55d74",
@@ -564,6 +612,14 @@
                 "id": "737387eb-f839-49df-a546-ece879ad760f",
                 "resourcePath": "objects\\oGame\\oGame.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fe9176a2-7c6a-459c-8986-1b1ec33f59cb",
+            "Value": {
+                "id": "4a308208-23ee-43a7-a296-2182204f5471",
+                "resourcePath": "sprites\\sTransition\\sTransition.yy",
+                "resourceType": "GMSprite"
             }
         }
     ],
