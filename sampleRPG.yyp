@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "268444c6-80a1-4f46-b39c-882dd3971e36",
+            "Value": {
+                "id": "534f1f75-1fc2-4a32-9cee-9169947b861a",
+                "resourcePath": "views\\268444c6-80a1-4f46-b39c-882dd3971e36.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2757402d-79c8-4fe4-9ce8-ceef4abfc24e",
             "Value": {
                 "id": "66f34063-a6c0-4c61-a48c-74cc49c49b18",
@@ -171,6 +179,14 @@
             "Value": {
                 "id": "52da981b-91b7-458e-9eba-42a2875668b6",
                 "resourcePath": "sprites\\brown_longsleeve_male\\brown_longsleeve_male.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3512c944-c15a-400b-a1b9-12eb9b92b4a3",
+            "Value": {
+                "id": "00169f2f-1c70-43a8-a958-594b7ed23d4e",
+                "resourcePath": "sprites\\spr_crops\\spr_crops.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -247,6 +263,14 @@
             }
         },
         {
+            "Key": "583fdd29-30dd-461c-af02-dd371a1d507b",
+            "Value": {
+                "id": "ddb71f08-4daa-40ec-8d51-f77621b4b678",
+                "resourcePath": "sprites\\spr_sparkle_strip5\\spr_sparkle_strip5.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "59a2e7a4-951c-4cac-ac39-8ef144da1d70",
             "Value": {
                 "id": "39daf9cb-2ccf-4f4a-b255-ee729c8133c7",
@@ -268,6 +292,14 @@
                 "id": "9fa3fd79-05d0-4640-9b01-752fdcafb775",
                 "resourcePath": "views\\5bcf4900-9437-4253-a24e-6e14d636ea7f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5e926045-c7bd-43cd-9405-115aa21360bf",
+            "Value": {
+                "id": "93b6781d-ac06-48d0-b40b-59fb7776a2b8",
+                "resourcePath": "scripts\\instance_create_crop\\instance_create_crop.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -471,6 +503,14 @@
             }
         },
         {
+            "Key": "9e29cef5-6b15-4065-b806-c4eedc3de348",
+            "Value": {
+                "id": "1c5cf3d4-8b2e-4d76-b2ad-9708f36a435c",
+                "resourcePath": "scripts\\create_crop_type\\create_crop_type.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a2a6854d-04c7-431a-bcf8-f7b6d4d93430",
             "Value": {
                 "id": "57bc86ee-b5b0-4b5f-aaad-6ab154f50742",
@@ -508,6 +548,14 @@
                 "id": "522c618f-0d99-4655-b234-98bc2ca067ea",
                 "resourcePath": "views\\b68f283d-0478-4b28-b790-f48edff24bbc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "bcb24aac-9de1-47ab-a3c9-e8782b1ec0d6",
+            "Value": {
+                "id": "534b40dd-f932-4471-8d22-8461f9f4e0e6",
+                "resourcePath": "objects\\oCrop\\oCrop.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -575,10 +623,26 @@
             }
         },
         {
+            "Key": "dd570dde-58f4-4d3b-a03c-cc445b02b3ba",
+            "Value": {
+                "id": "f289b622-e72f-43f4-a8ec-38c4d7d4804d",
+                "resourcePath": "objects\\Crops\\Crops.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e0c18f8b-ff70-43d0-a9ed-8386efae3621",
             "Value": {
                 "id": "5840a9d9-bd9c-4922-9a8c-c630a90c5f85",
                 "resourcePath": "sprites\\white_sleeveless_fem\\white_sleeveless_fem.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e146ee54-81fd-4419-91d1-571f6289e04f",
+            "Value": {
+                "id": "643beef2-95a4-47d5-b16e-8df075f25c1e",
+                "resourcePath": "sprites\\spr_crops_picked_strip7\\spr_crops_picked_strip7.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -624,7 +688,8 @@
         }
     ],
     "script_order": [
-        
+        "9e29cef5-6b15-4065-b806-c4eedc3de348",
+        "5e926045-c7bd-43cd-9405-115aa21360bf"
     ],
     "tutorial": ""
 }

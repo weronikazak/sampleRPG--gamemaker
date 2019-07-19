@@ -1,3 +1,6 @@
+roomWidth = room_width;
+roomHeight = room_height;
+
 if (spawnRoom == -1) exit;
 
 oPlayer.x = spawnX;
