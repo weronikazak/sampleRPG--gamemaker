@@ -663,6 +663,14 @@
             }
         },
         {
+            "Key": "ea900e78-0001-4225-b851-3d35e8b23d1e",
+            "Value": {
+                "id": "bc47c268-bc29-4c3d-bc7c-b75852de28b7",
+                "resourcePath": "scripts\\respawn_crop\\respawn_crop.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ef904f37-36ab-4cc3-b7c4-b1e4ec008986",
             "Value": {
                 "id": "f8f078e3-9313-4ec3-b818-16ed27f8cf8e",
@@ -689,7 +697,8 @@
     ],
     "script_order": [
         "9e29cef5-6b15-4065-b806-c4eedc3de348",
-        "5e926045-c7bd-43cd-9405-115aa21360bf"
+        "5e926045-c7bd-43cd-9405-115aa21360bf",
+        "ea900e78-0001-4225-b851-3d35e8b23d1e"
     ],
     "tutorial": ""
 }
