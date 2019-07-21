@@ -31,7 +31,7 @@ if (instance_exists(oCrop) and keyboard_check_pressed(ord("G"))){
 			
 			var firstGrowth = 0;
 			if (daysOld > 0) { firstGrowth = 1; }
-			growthStage = daysOld + firstGrowth div growthStageDuration;
+			growthStage = firstGrowth + (daysOld div growthStageDuration);
 		} else {
 			growthStage = maxGrowthStage;
 			fullyGrown = true;

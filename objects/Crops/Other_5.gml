@@ -4,7 +4,7 @@ if (room == r1) {
 		ds_grid_clear(ds_crops_data, -1);
 	} else {
 		//there is crops, so save data
-		ds_grid_resize(ds_crops_data, ds_grid_width(ds_crops_data), ds_grid_height(ds_crops_data));
+		ds_grid_resize(ds_crops_data, ds_grid_width(ds_crops_data), inst_num);
 		
 		//loop throught the instance grid
 		var gw = ds_grid_width(ds_crops_instances);
@@ -16,6 +16,8 @@ if (room == r1) {
 			var yy = 0;
 			repeat(gh) {
 				var inst = ds_crops_instances[# xx, yy];
+				
+				//if there is an instance in the cell, save its data
 				
 				if (inst != 0){
 					ds_crops_data[# 0, slot] = xx;
