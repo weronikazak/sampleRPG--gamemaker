@@ -1,3 +1,9 @@
+
+if (room != r1) {
+	planting = false;
+	exit;
+}
+
 #region Planting
 
 if (keyboard_check_pressed(ord("P"))){

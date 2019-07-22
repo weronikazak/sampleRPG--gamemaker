@@ -695,6 +695,14 @@
             }
         },
         {
+            "Key": "f0632d23-7f21-4389-b8f5-f37621804895",
+            "Value": {
+                "id": "653a9b40-a113-466c-9551-f9cce95d17c0",
+                "resourcePath": "objects\\oDayAndNight\\oDayAndNight.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "fdaa829c-3ac5-4550-ae77-62bb96daf12c",
             "Value": {
                 "id": "737387eb-f839-49df-a546-ece879ad760f",
