@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "1ced9c7a-d782-415f-80cf-7dfebfa1f5bc",
+            "Value": {
+                "id": "29cdefcb-71d8-4fff-a7db-f717e5fc2e65",
+                "resourcePath": "sprites\\spr_allcoins_strip8\\spr_allcoins_strip8.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f067757-eb7f-4fef-9a8c-cd4ec26ce7df",
             "Value": {
                 "id": "7c0a6ea2-e2e7-4ba7-8077-1f9c48f49d15",
@@ -543,11 +551,35 @@
             }
         },
         {
+            "Key": "a617636d-3dff-4579-b30b-034258c86207",
+            "Value": {
+                "id": "5f1f5369-3236-43f4-823f-497f69e0c420",
+                "resourcePath": "objects\\Inventory\\Inventory.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9e3634b-c350-4e5d-8427-d5d47bbe4f85",
             "Value": {
                 "id": "ebb79113-adc9-4862-99c7-ad6e5866e3b8",
                 "resourcePath": "scripts\\merge_numbers\\merge_numbers.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ac3e862a-e43e-4afc-b0d1-2f18e02282fa",
+            "Value": {
+                "id": "f5baca94-d201-4c12-9b2d-207bac3226f4",
+                "resourcePath": "sprites\\spr_inventory_items\\spr_inventory_items.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "af4b9649-f8eb-4346-8280-54316822f198",
+            "Value": {
+                "id": "043455bb-773d-44db-a072-36d919c0a58f",
+                "resourcePath": "views\\af4b9649-f8eb-4346-8280-54316822f198.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -644,6 +676,14 @@
                 "id": "cbf6eadd-1765-4b1a-88b4-1370c7e55d74",
                 "resourcePath": "views\\d80857df-6012-4f36-9447-53f025a5f24a.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "dc14fe8c-d50a-4c94-b544-183597c3ff07",
+            "Value": {
+                "id": "dda08204-03ac-463f-be8a-bb7741fa37b4",
+                "resourcePath": "sprites\\spr_inventory_UI\\spr_inventory_UI.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
