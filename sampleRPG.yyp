@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "105065ad-2e80-4f45-becc-68b64fed6970",
+            "Value": {
+                "id": "5b7b49d1-bbad-480e-a7fc-c73c754ca91c",
+                "resourcePath": "fonts\\inf_font_24\\inf_font_24.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "18eda2a5-6868-4912-b09a-c3ddaf654f9c",
             "Value": {
                 "id": "3968ae48-4bc6-481e-ad07-ec03d8d09ca2",
@@ -132,6 +140,14 @@
                 "id": "7c0a6ea2-e2e7-4ba7-8077-1f9c48f49d15",
                 "resourcePath": "views\\1f067757-eb7f-4fef-9a8c-cd4ec26ce7df.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "212d0e04-387f-435e-b994-521577085aeb",
+            "Value": {
+                "id": "aac5eedf-9d8a-45e5-81b0-99a8a7b7015d",
+                "resourcePath": "fonts\\inf_font_12\\inf_font_12.yy",
+                "resourceType": "GMFont"
             }
         },
         {
@@ -732,6 +748,14 @@
                 "id": "bc47c268-bc29-4c3d-bc7c-b75852de28b7",
                 "resourcePath": "scripts\\respawn_crop\\respawn_crop.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ee509e3d-8e84-44b8-9ec3-3047a4b792ef",
+            "Value": {
+                "id": "c76d85d8-df85-41a0-b3c2-bcec4b94d07b",
+                "resourcePath": "fonts\\inf_font_smalldigits\\inf_font_smalldigits.yy",
+                "resourceType": "GMFont"
             }
         },
         {
