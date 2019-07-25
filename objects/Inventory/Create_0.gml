@@ -7,6 +7,11 @@ invSlots = 16;
 invSlotsWidth = 8;
 invSlotsHeight = 3;
 
+selectedSlot = 0;
+pickupSlot = -1;
+mSlotX = 0;
+mSlotY = 0;
+
 xBuffer = 2;
 yBuffer = 4;
 

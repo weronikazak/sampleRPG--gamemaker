@@ -33,9 +33,32 @@ repeat(invSlots){
 
 	//draw slot and item
 	draw_sprite_part_ext(sInv_UI, 0, 0, 0, cellSize, cellSize, xx, yy, scale, scale, c_white, 1);
-	if (iitem > 0) {
-	draw_sprite_part_ext(
-		sInvItems, 0, sx, sy, cellSize, cellSize, xx, yy, scale, scale, c_white, 1);
+	
+	switch(ii){
+		case selectedSlot:
+			if (iitem > 0) {
+				draw_sprite_part_ext(
+				sInvItems, 0, sx, sy, cellSize, cellSize, xx, yy, scale, scale, c_white, 1);
+			}
+			gpu_set_blendmode(bm_add);
+			draw_sprite_part_ext(sInv_UI, 0, 0, 0, cellSize, cellSize, xx, yy, scale, scale, c_white, .3);
+			gpu_set_blendmode(bm_normal);
+		break;
+		
+		case pickupSlot:
+			if (iitem > 0) {
+				draw_sprite_part_ext(
+				sInvItems, 0, sx, sy, cellSize, cellSize, xx, yy, scale, scale, c_white, .2);
+			}
+		break;
+		
+		default:
+			if (iitem > 0) {
+				draw_sprite_part_ext(
+				sInvItems, 0, sx, sy, cellSize, cellSize, xx, yy, scale, scale, c_white, 1);
+			}
+		break;
+		
 	}
 	
 	//draw item number
@@ -48,4 +71,16 @@ repeat(invSlots){
 	ii+= 1;
 	ix = ii mod invSlotsWidth;
 	iy = ii div invSlotsWidth;
+}
+
+if (pickupSlot != -1){
+	// item
+	iitem = invGrid[# 0, pickupSlot];
+	sx = (iitem mod sprInvColumns)*cellSize;
+	sy = (iitem div sprInvColumns)*cellSize;
+	draw_sprite_part_ext(
+		sInvItems, 0, sx, sy, cellSize, cellSize, mousex, mousey, scale, scale, c_white, 1);
+
+	var inum = invGrid[# 1, pickupSlot];
+	draw_text_color(mousex + (cellSize*scale*0.5), mousey, string(inum), c, c, c, c, 1);
 }
