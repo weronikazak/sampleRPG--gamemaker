@@ -74,13 +74,15 @@ if (pickupSlot != -1){ //if we pick something up
 	}
 }
 
-if (ssItem != item.none){
+else if (ssItem != item.none){
 	
 	if (mouse_check_button_pressed(mb_middle)){
 		inv_grid[# 1, selectedSlot] -= 1;
+		
 		//destroy item in inventiry if it was the last one
-		if (inv_grid[# 0, selectedSlot] == 0){
-			inv_grid[# 1, selectedSlot] = item.none;
+		if (inv_grid[# 1, selectedSlot] == 0){
+			inv_grid[# 0, selectedSlot] = item.none;
+			
 		}
 		
 		//create the item
