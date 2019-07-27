@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "ce0347d0-04e6-49df-ab42-90269db6758a",
+            "Value": {
+                "id": "4baf8ea2-1bf3-449b-82df-b170a6415a6b",
+                "resourcePath": "objects\\oNotifications\\oNotifications.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cfe7f4c8-b44a-4723-bf58-095c9182b135",
             "Value": {
                 "id": "d1a90a8c-86f4-4d5e-819e-be120b8e8e98",
