@@ -17,6 +17,7 @@ var i_mouseY = mousey - slotsY;
 var nx = i_mouseX div cell_x_buff;
 var ny = i_mouseY div cell_y_buff;
 
+var mouseInInventory = true;
 if (nx >= 0 and nx < invSlotsWidth and ny >= 0 and ny < invSlotsHeight){
 	var sx = i_mouseX - (nx*cell_x_buff); 
 	var sy = i_mouseY - (ny*cell_y_buff);
@@ -26,6 +27,8 @@ if (nx >= 0 and nx < invSlotsWidth and ny >= 0 and ny < invSlotsHeight){
 		mSlotY = ny;
 	}
 
+} else {
+	var mouseInInventory = false;
 }
 
 // set selected slot to mouse position
@@ -42,7 +45,28 @@ var ssItem = inv_grid[# 0, selectedSlot];
 
 if (pickupSlot != -1){ //if we pick something up
 	if (mouse_check_button_pressed(mb_left)){
-		if (ssItem == item.none){
+		if (!mouseInInventory){
+#region drop item into game world
+		var pitem = inv_grid[# 0, pickupSlot];
+		inv_grid[# 1, pickupSlot] -= 1;
+		
+		//destroy item in inventiry if it was the last one
+		if (inv_grid[# 1, pickupSlot] == 0){
+			inv_grid[# 0, pickupSlot] = item.none;
+			pickupSlot = -1;
+		}
+		
+		//create the item
+		var inst = instance_create_layer(oPlayer.x , oPlayer.y, "Instances", oItems);
+		with (inst){
+			itemNum = pitem;
+			xFrame = itemNum mod (sprWidth/cellSize);
+			yFrame = itemNum div (sprWidth/cellSize);
+		}
+		show_debug_message("Dropped an item");
+#endregion
+		
+		} else if (ssItem == item.none){
 			inv_grid[# 0, selectedSlot] = inv_grid[# 0, pickupSlot];
 			inv_grid[# 1, selectedSlot] = inv_grid[# 1, pickupSlot];
 			

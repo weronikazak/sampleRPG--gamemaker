@@ -3,7 +3,7 @@ scale = 2;
 cellSize = 32;
 showInventory = true;
 
-invSlots = 16;
+invSlots = 17;
 invSlotsWidth = 8;
 invSlotsHeight = 3;
 
@@ -36,6 +36,9 @@ infoY = invUI_y + (9 * scale);
 
 slotsX = infoX;
 slotsY = invUI_y + (40 * scale)
+
+descX = infoX;
+descY = invUI_y + (156 * scale);
 
 // Player info
 // 0 GOLD
@@ -82,8 +85,51 @@ enum item {
 	height = 17
 }
 
-ds_inventory[# 0, 0] = item.bucket;
-ds_inventory[# 1, 0] = 1;
+#region Create item info grid
+	ds_items_info = ds_grid_create(2, item.height); 
+	
+	//item names
+	var z = 0; i = 0;
+	ds_items_info[# z, i++] = "Nothing";
+	ds_items_info[# z, i++] = "Tomato";
+	ds_items_info[# z, i++] = "Potato";
+	ds_items_info[# z, i++] = "Carrot";
+	ds_items_info[# z, i++] = "Artichoke";
+	ds_items_info[# z, i++] = "Chilli";
+	ds_items_info[# z, i++] = "Gourd";
+	ds_items_info[# z, i++] = "Corn";
+	ds_items_info[# z, i++] = "Wood";
+	ds_items_info[# z, i++] = "Stone";
+	ds_items_info[# z, i++] = "Bucket";
+	ds_items_info[# z, i++] = "Chair";
+	ds_items_info[# z, i++] = "Picture";
+	ds_items_info[# z, i++] = "Axe";
+	ds_items_info[# z, i++] = "Portion";
+	ds_items_info[# z, i++] = "Starfish";
+	ds_items_info[# z, i++] = "Mushroom";
+	
+	z = 1; i = 0;
+	ds_items_info[# z, i++] = "Empty.";
+	ds_items_info[# z, i++] = "To-mah.. may-to.";
+	ds_items_info[# z, i++] = "Pre-chips.";
+	ds_items_info[# z, i++] = "Keep away from rabbits.";
+	ds_items_info[# z, i++] = "The heartiest vegetable";
+	ds_items_info[# z, i++] = "But oddly hot.";
+	ds_items_info[# z, i++] = "Or is it an eggplant?";
+	ds_items_info[# z, i++] = "Better popped";
+	ds_items_info[# z, i++] = "Knock on it.";
+	ds_items_info[# z, i++] = "There's nothing written in it.";
+	ds_items_info[# z, i++] = "You can fill it with water.";
+	ds_items_info[# z, i++] = "This chair is just right.";
+	ds_items_info[# z, i++] = "Wait, who even is this?";
+	ds_items_info[# z, i++] = "Chop chop!";
+	ds_items_info[# z, i++] = "This liquid looks... oozy.";
+	ds_items_info[# z, i++] = "So called because it looks like a star.";
+	ds_items_info[# z, i++] = "A fungus; not mush room for interpretation.";
+
+
+
+#endregion
 
 var yy = 0;
 repeat(invSlots){
