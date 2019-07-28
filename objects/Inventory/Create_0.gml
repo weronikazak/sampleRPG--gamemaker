@@ -1,7 +1,7 @@
 depth = -1;
-scale = 2;
+scale = 1;
 cellSize = 32;
-showInventory = true;
+showInventory = false;
 
 invSlots = 17;
 invSlotsWidth = 8;
