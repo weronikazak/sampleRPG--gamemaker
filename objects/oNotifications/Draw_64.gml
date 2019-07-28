@@ -2,6 +2,7 @@
 var not_grid = ds_notifications;
 var grid_height = ds_grid_height(not_grid);
 var c = c_white;
+draw_set_font(font);
 
 var yy = 0;
 repeat (grid_height){
@@ -13,7 +14,7 @@ repeat (grid_height){
 	draw_text_color(
 		100,
 		(gui_height/2)+ (yy*str_height) - (grid_height*str_height),
-		string(not_grid[# 0, yy]) + " " * string(not_grid[# 1, yy]),
+		string(not_grid[# 0, yy]) + " " + string(not_grid[# 1, yy]),
 		c, c, c, c, not_alpha
 	);
 	yy++;

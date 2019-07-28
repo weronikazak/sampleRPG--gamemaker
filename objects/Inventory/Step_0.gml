@@ -42,12 +42,17 @@ selectedSlot = min(invSlots-1, mSlotX + (mSlotY*invSlotsWidth));
 
 var inv_grid = ds_inventory;
 var ssItem = inv_grid[# 0, selectedSlot];
+var createNotificaions = false;
 
 if (pickupSlot != -1){ //if we pick something up
 	if (mouse_check_button_pressed(mb_left)){
 		if (!mouseInInventory){
 #region drop item into game world
+		createNotificaions = true;
+
 		var pitem = inv_grid[# 0, pickupSlot];
+		var in = pitem;
+		
 		inv_grid[# 1, pickupSlot] -= 1;
 		
 		//destroy item in inventiry if it was the last one
@@ -65,7 +70,6 @@ if (pickupSlot != -1){ //if we pick something up
 		}
 		show_debug_message("Dropped an item");
 #endregion
-		
 		} else if (ssItem == item.none){
 			inv_grid[# 0, selectedSlot] = inv_grid[# 0, pickupSlot];
 			inv_grid[# 1, selectedSlot] = inv_grid[# 1, pickupSlot];
@@ -101,6 +105,9 @@ if (pickupSlot != -1){ //if we pick something up
 else if (ssItem != item.none){
 	
 	if (mouse_check_button_pressed(mb_middle)){
+		createNotificaions = true;
+		var in = inv_grid[# 0, selectedSlot];
+		
 		inv_grid[# 1, selectedSlot] -= 1;
 		
 		//destroy item in inventiry if it was the last one
@@ -123,4 +130,47 @@ else if (ssItem != item.none){
 	if (mouse_check_button_pressed(mb_right)){
 		pickupSlot = selectedSlot;
 	}
+}
+
+if (createNotificaions){
+#region Create Notification
+if (!instance_exists(oNotifications)){
+	instance_create_layer(0, 0, "Instances", oNotifications);
+}
+
+with (oNotifications){
+	if (!ds_exists(ds_notifications, ds_type_grid)){
+		ds_notifications = ds_grid_create(2, 1);
+		var not_grid = ds_notifications;
+		not_grid[# 0, 0] = -1;
+		not_grid[# 1, 0] = Inventory.ds_items_info[# 0, in];
+	} else {
+		//Add to grid
+		event_perform(ev_other, ev_user0);
+						
+		var not_grid = ds_notifications;
+		var grid_heigh = ds_grid_height(not_grid);
+		var name = Inventory.ds_items_info[# 0, in];
+		var in_grid = false;
+						
+		var yy = 0;
+		repeat(grid_heigh){
+			if (name == not_grid[# 1, yy]){
+				not_grid[# 0, yy] -= 1;
+				in_grid =true;
+				break;
+				}
+						
+			yy++;
+			}
+					
+		if (!in_grid){
+			ds_grid_resize(not_grid, 2, grid_heigh*1);
+			not_grid[# 0, grid_heigh] = -1;
+			not_grid[# 1, 0] = Inventory.ds_items_info[# 0, in];
+		}
+	}
+}
+
+#endregion
 }

@@ -69,6 +69,29 @@ if (drop_move){
 						not_grid[# 1, 0] = Inventory.ds_items_info[# 0, in];
 					} else {
 						//Add to grid
+						event_perform(ev_other, ev_user0);
+						
+						var not_grid = ds_notifications;
+						var grid_heigh = ds_grid_height(not_grid);
+						var name = Inventory.ds_items_info[# 0, in];
+						var in_grid = false;
+						
+						var yy = 0;
+						repeat(grid_heigh){
+							if (name == not_grid[# 1, yy]){
+								not_grid[# 0, yy] += 1;
+								in_grid =true;
+								break;
+								}
+						
+							yy++;
+							}
+					
+						if (!in_grid){
+							ds_grid_resize(not_grid, 2, grid_heigh*1);
+							not_grid[# 0, grid_heigh] = 1;
+							not_grid[# 1, 0] = Inventory.ds_items_info[# 0, in];
+						}
 					}
 				}
 				#endregion
