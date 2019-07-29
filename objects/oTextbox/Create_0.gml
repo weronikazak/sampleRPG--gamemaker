@@ -23,11 +23,19 @@ textX = boxX + xBuffer;
 textY = boxY + yBuffer;
 nameTextX = nameboxX + (namebox_width/2);
 nameTextY = nameboxY + (namebox_height/2); 
+xMaxWidth = box_width - (2*xBuffer);
+xMaxWidth = box_width - (2*xBuffer);
+textMaxWidth = box_width - (2 * xBuffer);
 
 portraitIndex = 0;
+interact_key = ord("E");
 
-text = " WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW";
+text[0] = "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW";
+text[1] = "this is the second page";
+page = 0;
 name = "name";
 
 text_col = c_black;
 font = inf_font_12;
+draw_set_font(font);
+textHeight = string_height("M");

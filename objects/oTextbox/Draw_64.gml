@@ -24,4 +24,4 @@ draw_set_halign(fa_left); draw_set_halign(fa_top);
 
 //draw text
 var c = text_col;
-draw_text_color(textX, textY, text, c, c, c, c, 1);
+draw_text_ext_color(textX, textY, text[page], textHeight, textMaxWidth, c, c, c, c, 1);
