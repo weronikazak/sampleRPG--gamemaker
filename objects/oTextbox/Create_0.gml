@@ -28,10 +28,13 @@ xMaxWidth = box_width - (2*xBuffer);
 textMaxWidth = box_width - (2 * xBuffer);
 
 portraitIndex = 0;
+counter = 0;
 interact_key = ord("E");
+voice = snd_voice1;
+pause = false;
 
-text[0] = "WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW";
-text[1] = "this is the second page";
+text[0] = "WWWWWWWWWWWWWWWWW!!! WWWWW? WWW ? W.";
+text[1] = "this, is the second page. Or, at leat, I think so?";
 page = 0;
 name = "name";
 
@@ -39,3 +42,5 @@ text_col = c_black;
 font = inf_font_12;
 draw_set_font(font);
 textHeight = string_height("M");
+
+event_perform(ev_other, ev_user1);
