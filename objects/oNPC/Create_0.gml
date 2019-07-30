@@ -22,3 +22,11 @@ moveX = 0;
 moveY = 0;
 
 alarm[1] = 1;
+
+portraitIndex = 0;
+name = "Anonymous";
+voice = snd_voice1;
+text = ["This person has nothing to say"];
+speakers = [id];
+
+canMove = true;

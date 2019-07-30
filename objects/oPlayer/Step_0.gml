@@ -4,6 +4,7 @@ input_up = keyboard_check(vk_up);
 input_down = keyboard_check(vk_down);
 input_walk = keyboard_check(vk_control);
 input_run = keyboard_check(vk_shift);
+input_interact = keyboard_check_pressed(ord("E"));
 
 if (input_walk or input_run){
 	spd = abs((input_walk*w_spd) - (input_run*r_spd));
@@ -71,5 +72,28 @@ if (inst != noone and facing == inst.playerFacingBefore) {
 	}
 }
 
+//textbox
+if (input_interact){
+	
+	if (active_textbox){
+		var inst = collision_rectangle(x-radius, y-radius, x+ radius, y+radius, oNPC, false, false);
+
+		if (inst != noone){
+			with (inst){
+				var tbox = create_texbox(text, speakers);
+				canMove = false;
+				moveX = 0;
+				moveY = 0;
+			}
+			active_textbox = tbox;
+		}
+	} else {
+		if (!instance_exists(active_textbox)){
+			active_textbox = noone;
+		}
+	}
+}
+
+//apply movement
 x += moveX;
 y += moveY;

@@ -20,3 +20,10 @@ ssShadow = sShadow;
 
 facing = 0;
 
+portraitIndex = 7;
+name = "Player";
+voice = snd_voice1;
+
+radius = 16;
+
+active_textbox = noone;

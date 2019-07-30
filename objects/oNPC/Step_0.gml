@@ -1,4 +1,6 @@
 
+if (!canMove) { exit; }
+
 if (moveX != 0){
 	var collisionX = instance_place(x + moveX, y, oCollision);
 	if (collisionX != noone and collisionX.collideable == true){

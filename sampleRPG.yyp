@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "3828636b-2f5d-4f97-9d22-516e13f9acb8",
+            "Value": {
+                "id": "2d6ce930-7e25-40e9-b5a9-cbc906d5d002",
+                "resourcePath": "scripts\\create_texbox\\create_texbox.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "391d307a-3df0-47fb-812a-4f9535ddf573",
             "Value": {
                 "id": "44ebb5d0-aad8-4662-907c-904771b6d3fa",
@@ -892,7 +900,8 @@
         "5e926045-c7bd-43cd-9405-115aa21360bf",
         "ea900e78-0001-4225-b851-3d35e8b23d1e",
         "a9e3634b-c350-4e5d-8427-d5d47bbe4f85",
-        "7aa6d4ff-ceec-4b96-b02c-3c8bae1dda24"
+        "7aa6d4ff-ceec-4b96-b02c-3c8bae1dda24",
+        "3828636b-2f5d-4f97-9d22-516e13f9acb8"
     ],
     "tutorial": ""
 }
