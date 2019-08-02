@@ -29,7 +29,7 @@ textMaxWidth = box_width - (2 * xBuffer);
 
 portraitIndex = 0;
 counter = 0;
-interact_key = ord("E");
+interact_key = vk_space;
 voice = snd_voice1;
 pause = false;
 
@@ -41,5 +41,8 @@ text_col = c_black;
 font = inf_font_12;
 draw_set_font(font);
 textHeight = string_height("M");
+
+choice = 0;
+choice_col = c_orange;
 
 //event_perform(ev_other, ev_user1);

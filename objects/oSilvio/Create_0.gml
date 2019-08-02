@@ -9,4 +9,13 @@ sFeet = brown_shoes_male;
 portraitIndex = 3;
 name = "Silvio";
 voice = snd_voice1;
-text = ["This person has nothing to say"];
+text = ["Siemanko",
+		[
+			"Siema, siema",
+			"What's up with you lately?"
+		],
+		"Not much",
+		"What's up with you?"
+		];
+speakers = [id, oPlayer, id, id];
+nextLine = [0, [2, 3], -1, -1];

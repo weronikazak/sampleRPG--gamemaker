@@ -28,5 +28,5 @@ name = "Anonymous";
 voice = snd_voice1;
 text = ["This person has nothing to say"];
 speakers = [id];
-
+nextLine = [0];
 canMove = true;

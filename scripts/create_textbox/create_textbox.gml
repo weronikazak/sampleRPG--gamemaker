@@ -1,12 +1,14 @@
 //@description create_textbox
 //@arg text
 //@arg speakers
+// @arg nextLine
 
 var tbox = instance_create_layer(0, 0, "Text", oTextbox);
 
 with (tbox){
 	text = argument[0];
 	speakers = argument[1];
+	nextLine = argument[2];
 	
 	var len = array_length_1d(text);
 	var i = 0;

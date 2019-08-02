@@ -250,7 +250,7 @@
             "Key": "3828636b-2f5d-4f97-9d22-516e13f9acb8",
             "Value": {
                 "id": "2d6ce930-7e25-40e9-b5a9-cbc906d5d002",
-                "resourcePath": "scripts\\create_texbox\\create_texbox.yy",
+                "resourcePath": "scripts\\create_textbox\\create_textbox.yy",
                 "resourceType": "GMScript"
             }
         },
