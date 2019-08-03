@@ -19,3 +19,9 @@ text = ["Siemanko",
 		];
 speakers = [id, oPlayer, id, id];
 nextLine = [0, [2, 3], -1, -1];
+scripts = [
+			[change_variable, id, "raven_male", dark_male],
+			-1,
+			-1,
+			-1,
+];

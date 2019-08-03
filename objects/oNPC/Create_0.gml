@@ -30,3 +30,5 @@ text = ["This person has nothing to say"];
 speakers = [id];
 nextLine = [0];
 canMove = true;
+
+scripts = -1;

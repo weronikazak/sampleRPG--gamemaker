@@ -3,6 +3,9 @@ if (keyboard_check_pressed(interact_key)){
 		counter = str_len;
 	}
 	else if (page < array_length_1d(text) -1){
+		event_perform(ev_other, ev_user2);
+		
+		
 		var line = nextLine[page];
 		
 		if (choice_dialogue) line = line[choice];
