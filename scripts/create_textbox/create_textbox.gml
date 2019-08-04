@@ -9,6 +9,7 @@ with (tbox){
 	text = argument[0];
 	speakers = argument[1];
 	nextLine = argument[2];
+	scripts = argument[3];
 	
 	var len = array_length_1d(text);
 	var i = 0;
